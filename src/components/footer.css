@@ -1,0 +1,410 @@
+
+/* XL DEVICES */
+    footer{
+        width: 100%;
+        min-height: 360px;
+        display: block;
+        overflow: hidden;
+        flex-direction: column;
+        position: relative;
+        background-color: var(--neutral-color-grey-100);
+    
+    
+        .mainContent{
+            height: 330px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            gap: 30px;
+    
+            .sectionA{
+                width: 30%;
+                height: 100%;
+                padding: 6px;
+                position: relative;
+                
+                h2{
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: var(--neutral-color-grey-800);
+                    margin-bottom: 10px;
+                }
+    
+                .cardContainer{
+                    width: 100%;
+                    height: 80%;
+                    perspective: 100%;
+    
+                    .flipCard{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        transform-style: preserve-3d;
+                        transform: rotateY(0deg);
+                        transition: transform 0.6s;
+    
+                        .locationOfficeDR{
+                            width: 95%;
+                            height: 100%;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            backface-visibility: hidden;
+                            bottom: 10px;
+        
+                            p{
+                                width: 85%;
+                                color: var(--neutral-color-grey-600);
+                                margin-bottom: 10px;
+                                font-size: 14px;
+                            }
+        
+                        }
+    
+                        .officeLocationMaps{
+                            width: 100%;
+                            position: absolute;
+                            top: -2%;
+                            z-index: 1;
+    
+                            img{
+                                width: 180px;
+                                position: absolute;
+                                top: 6%;
+                                left: 10%;
+                            }
+                        }
+    
+                        .locationOfficePanama{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            backface-visibility: hidden;
+                            bottom: 14px;
+                            transform: rotateY(180deg);
+    
+                            p{
+                                width: 85%;
+                                color: var(--neutral-color-grey-600);
+                                font-size: 14px;
+                                margin-bottom: 10px;
+                            }
+    
+                        }
+    
+                    }
+                }
+    
+                .flipCard.flipped{
+                    transform: rotateY(180deg);
+                }
+            }
+    
+                .buttons{
+                    display: flex;
+                    position: absolute;
+                    width: 80%;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    top: 13%;
+    
+    
+    
+                    button{
+                        width: fit-content;
+                        height: 40px;
+                        position: relative;
+                        color: var(--neutral-color-grey-500);
+                        font-size: 16px;
+                        display: block;
+                        border: none;
+                        background-color: transparent;
+                    }
+
+                 
+    
+    
+                    button.selected{
+                        span{
+                        padding-top: 2px;
+                        background-repeat: no-repeat;
+                        background-image: linear-gradient(120deg, var(--orange) 0%, var(--darkOrange) 40%);
+                        background-size: 100% 0.3em;
+                        background-position: 100% 120%;
+                        color: var(--neutral-color-grey-600);
+                        font-weight: 500;
+                        }
+                    }
+                }
+    
+            .section{
+                width: 20%;
+                height: 100%;
+                padding: 6px;
+                position: relative;
+    
+                .title{
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 10px;
+
+                    margin-bottom: 0;
+
+    
+                    h3{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: var(--neutral-color-grey-800);
+                    }
+                }
+    
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 8px;
+
+    
+                    a,p{
+                        color: var(--neutral-color-grey-600);
+                    }
+
+                    a:hover{
+                        color: var(--primary-color-yellow-900);
+                        font-weight: 600;
+                    }
+                }
+
+                
+            }
+    
+            .socialMedia{
+                display: flex;
+                width: 100%;
+                height: 20%;
+                position: absolute;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 10px;
+                right: 0;
+                bottom:40%;
+    
+    
+                .socialMediaLogo{
+                    height: 50%;
+                    opacity: 30%;
+    
+    
+                    img{
+                        width: 32px;
+                    }
+                }
+    
+                .socialMediaLogo:hover {
+                    transform: scale(1.1);
+                    opacity: 60%;
+                    transition: transform 250ms;
+    
+                };
+                
+            }
+        }
+    
+    
+        .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 20px;
+            border-top: solid 3px var(--neutral-color-grey-900);
+            background-color: var(--neutral-color-grey-800);
+    
+            h6{
+                font-size: 12px;
+                padding: 0;
+                margin: 0;
+                color: var(--neutral-color-grey-100);
+                font-weight: 600;
+            }
+        }
+
+        .mobileFooter{
+            display:none;
+        }
+    }
+ 
+
+/* L DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    footer{
+        .mainContent{
+            gap: 15px;
+    
+            .sectionA{
+                h2{
+                    font-size: 20px;
+                }
+    
+                .cardContainer{
+                    .flipCard{
+                        .locationOfficeDR{
+                            width: 100%;
+        
+                            p{
+                                width: 90%;
+                            }
+                        }
+    
+                        .officeLocationMaps{
+    
+                            img{
+                                width: 170px;
+                                top: 10%;
+                            }
+                        }
+    
+                        .locationOfficePanama{
+    
+                            p{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+                .buttons{
+                    button.selected{
+                        span{
+                        color: var(--neutral-color-grey-700);
+                        }
+                    }
+                }
+    
+            .section{
+                .title{
+                    h3{
+                        font-size: 18px;
+                    }
+                }
+    
+                .links{
+                    a:hover{
+                        color: var(--primary-color-yellow-900);
+                        font-weight: 500;
+                    }
+                }
+
+                
+            }
+    
+            .socialMedia{
+                gap: 12px;
+    
+                .socialMediaLogo{
+                    img{
+                        width: 30px;
+                    }
+                }
+                
+            }
+        }
+    
+    }
+}
+
+
+/* M DEVICES */
+@media only screen and (max-width: 992px) {
+    footer{
+        .mainContent{
+            display: none;
+
+        }
+    
+        .copyright{
+            display: none;
+        }
+
+        .mobileFooter{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+
+            .socialMedia{
+                width: 100%;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: var(--neutral-color-grey-800);
+
+                .iconsContainer{
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+
+
+                    .icon{
+                        width: 25px;
+                        height: 25px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        background-color: var(--neutral-color-grey-200);
+                        transition: 0.1s transform;
+                    }
+
+                    .icon:hover{
+                        transform: scale(1.1);
+                        background-color: var(--neutral-color-grey-100);
+                    }
+                }
+            }
+
+            .end{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+
+                h6{
+                    color: var(--neutral-color-grey-200);
+                    font-size: 12px;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+/* S devices */
+@media only screen and (max-width: 768px){
+    footer{
+        .mobileFooter{
+            .socialMedia{
+                .iconsContainer{
+                    .icon{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,351 @@
+
+.bannerHeader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+
+
+    .textContent,.graphicContent{
+        display: flex;
+        width: 100%;
+        height: 90vh;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+
+        }
+
+        h1,p{
+            margin-left: 50px;
+            margin-bottom: 0;
+
+        }
+
+        h1{
+            width: 60%;
+        }
+
+        p{
+            width:45%;
+            margin-top:30px;
+            line-height: 32px;
+            font-size: 24px;
+        }
+
+    } 
+
+    .textContent{
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 25%;
+        z-index:2;
+    }
+
+    .graphicContent{
+        z-index:1;
+        justify-content: flex-end;
+        background-size: 60% 50%;
+        background-position: bottom center;
+
+        .puzzlePiece{
+            width: 40vw;
+            height:50vh;
+            background-size: 44% auto;
+            background-position: center left;
+
+        }
+    }
+
+}
+
+.applyingSection{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form{
+        width: 70vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        gap: 10px;
+        background-color: var(--neutral-color-grey-100);
+        box-shadow: rgba(56, 56, 56, 0.25) 0px 0.0625em 0.0625em, rgba(78, 78, 78, 0.124) 0px 0.125em 0.5em, rgba(79, 79, 79, 0.1) 0px 0px 0px 1px inset;
+
+        h2{
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+
+        .formHeader1{
+            text-align: center;
+            width: 70%;
+            margin-left: 26px;
+            font-weight: 500;
+            color: var(--neutral-color-grey-600);
+        }
+
+        .formHeader{
+            text-align: center;
+            width: 60%;
+            margin-left: 26px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            height: 60vh;
+            gap: 30px;
+            margin-bottom: 20px;
+
+            fieldset{
+                width: 60%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items: flex-start;
+                border: none;
+
+
+                .box{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    input{
+                        width: 100%;
+                        height: 4vh;
+                        border-radius: 8px;
+                        border: 1px solid rgb(116, 116, 116);
+                    }
+                }
+            }
+            button{
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+
+
+/* L DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .bannerHeader{
+    
+        .textContent,.graphicContent{
+    
+            .text{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+            }
+    
+            h1,p{
+                margin-left: 0px;
+    
+            }
+    
+            h1{
+                width: 80%;
+            }
+    
+            p{
+                width:70%;
+            }
+    
+        } 
+    
+        .textContent{
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 25%;
+            z-index:2;
+        }
+    
+        .graphicContent{
+    
+            .puzzlePiece{
+                display:none;
+    
+            }
+        }
+    
+    }
+    
+    .applyingSection{
+    
+        .form{
+            .formHeader{
+                width: 80%;
+
+            }
+    
+            form{
+                width: 80vw;
+    
+            }
+        }
+    }
+}
+
+/* M DEVICES */
+@media only screen and (max-width: 992px) {
+    .bannerHeader{
+        height: 60vh;
+        margin-bottom: 0px;
+    
+        .textContent{
+            height: 50vh;
+            padding-top: 20px;
+            align-items: flex-end;
+
+    
+            .text{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+            }
+    
+            h1,p{
+                margin-left: 0px;
+    
+            }
+    
+            h1{
+                width: 80%;
+            }
+    
+            p{
+                width:90%;
+            }
+    
+        } 
+    
+
+    
+        .graphicContent{
+            display:none;
+            width: 0;
+            height: 0;
+
+            .puzzlePiece{
+                display:none;
+    
+            }
+        }
+    
+    }
+    
+    .applyingSection{
+        height:110vh;
+        margin-bottom: 20px;
+    
+        .form{
+            .formHeader{
+                width: 80%;
+
+            }
+    
+            form{
+                width: 80vw;
+    
+            }
+        }
+    }
+}
+
+/* S devices */
+@media only screen and (max-width: 768px){
+    .bannerHeader{
+        height: 60vh;
+        margin-bottom: 0px;
+    
+        .textContent{
+            height: 50vh;
+            padding-top: 20px;
+            align-items: flex-end;
+
+    
+            .text{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+
+    
+            }
+    
+            h1,p{
+                margin-left: 0px;
+    
+            }
+    
+            h1{
+                width: 100%;
+            }
+    
+            p{
+                width:95%;
+                line-height: 4vh;
+            }
+    
+        } 
+    
+
+    
+        .graphicContent{
+            display:none;
+            width: 0;
+            height: 0;
+
+            .puzzlePiece{
+                display:none;
+    
+            }
+        }
+    
+    }
+    
+    .applyingSection{
+        height:110vh;
+        margin-bottom: 20px;
+    
+        .form{
+            width: 90vw;
+            .formHeader{
+                text-align: left;
+                width: 95%;
+                margin-left: 40px;
+
+            }
+    
+            form{
+                width: 100vw;
+
+                fieldset{
+                    width:80%
+                }
+    
+            }
+        }
+    }
+}

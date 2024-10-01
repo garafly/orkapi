@@ -1,0 +1,330 @@
+
+
+/* XL DEVICES */
+
+    header{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    
+        border-top: 4px solid;
+        border-image: linear-gradient(to right, var(--primary-color-red-700), var(--primary-color-red-400)) 1 0 0 0;
+        box-shadow: 0px 6px 45px #cccccc ;
+        box-shadow: 0px 1px 4px #d1d1d1;
+        margin-bottom: 4em;
+        font-family: var(--fontFamily-roboto);
+        color: var(--neutral-color-grey-700);
+        font-size: 16px;
+    
+        .logo{
+            width: 110px;
+            height: 40px;
+            position: relative;
+            margin-left: 10px;
+    
+            .logo-image {
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+                object-position: center;
+                display: block; 
+            }
+        }
+    
+        .navLinks{
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+    
+            .navLink{
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                padding-top: 2px;
+            }
+
+            a{
+                text-decoration: none;
+                color: var(--neutral-color-grey-500);
+            }
+    
+            .navLink:hover{
+                color: var(--neutral-color-grey-600);
+                transform: scale(1.1);
+            }
+    
+            .navLinkB{
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                padding: 2px;
+                border-radius: 8px;
+    
+                .underline--magical {
+                    padding: 0 6px;
+                    padding-top: 2px;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(120deg, var(--primary-color-yellow-300) 0%, var(--primary-color-yellow-200) 100%);
+                    background-size: 100% 0.4em;
+                    background-position: 100% 120%;
+        
+                    transition: background-size 0.25s ease-in;
+                    &:hover {
+                      background-size: 100% 100%;
+                      border-radius: 6px;
+                      
+                    }
+                  }
+            }
+    
+        }
+
+        .mobile-menu{
+            display: none;
+        }
+    
+    }
+
+
+/* L DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    header{
+        font-size: 14px;
+    
+        .navLinks{
+            .navLinkB{
+                width: 8%;
+            }
+        }
+
+    }
+}
+
+/* M DEVICES */
+@media only screen and (max-width: 992px) {
+
+    header{
+        font-size: 14px;
+    
+        /* These are the desktop ones  */
+        .navLinks{
+            display: none;
+        }
+
+        /* These are the mobile ones  */
+        .mobile-menu {
+            width: 8%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            
+
+            .menuIcon{
+                width: 36px;
+                margin-right: 10px;
+
+            }
+
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 10%;
+                background-color: var(--neutral-color-grey-100);
+                min-width: 760%;
+                min-height: 620%;
+                flex-direction: column;
+                z-index: 1;
+                padding: 0;
+                margin: 0;
+                box-shadow:  4px 6px 8px rgba(0, 0, 0, 0.2);
+
+                .linksDropdownMenu{
+                    width: 100%;
+                    display: flex;
+                    gap: 8px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+
+                    .menuDivision{
+                        width: 50%;
+                    }
+
+                    .dropdown-item{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin-left: 16px;
+                        border-radius: 8px;
+                        padding: 10px 4px;
+
+                        .mobileNavIcons{
+                            width: 58px;
+                            height: 44px;
+                            border-radius: 50%;
+                            background-color: var(--neutral-color-grey-200);
+
+                            img{
+                                width: 25px;
+                                height:25px;
+                                margin-top: 8px;
+                                margin-left: 10px;
+                            }
+                        }
+
+                        .textContent{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 100%;
+                            justify-content: flex-start;
+
+                        }
+
+                        a{
+                            padding: 0px 16px;
+                            color: var(--neutral-color-grey-700);
+                            text-decoration: none;
+                            display: block;
+                            width: 100%;
+
+                        }
+
+                        p{
+                            font-size: 12px;
+                            margin-left: 16px;
+                            color: var(--neutral-color-grey-400);
+                        }
+
+
+                    }
+
+            
+                    .dropdown-item:hover {
+                        background-color: var(--primary-color-yellow-200);
+
+                        .mobileNavIcons{
+                            background-color: var(--primary-color-yellow-600);
+                        }
+                    }
+                }
+
+                .socialDropdownMenu{
+                    width: 100%;
+                    height: 55px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background-color: var(--neutral-color-grey-200);
+
+
+                    .socialMediaLogos{
+                        display: flex;
+                        gap: 15px;
+                        margin-right: 20px;
+
+
+                        .socialMediaLogo{
+                            width: 20px;
+                            height: auto;
+                            transition: 0.05s transform ease-in-out;
+                        }
+
+                        .socialMediaLogo:hover{
+                            transform: scale(1.1);
+                            opacity: 30%;
+                        }
+                    }
+
+
+
+                }
+
+
+            }
+
+
+            .mobile-menu a {
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+    
+            .mobile-menu a:hover {
+                background-color: var(--neutral-color-grey-200);
+            }
+    
+            .mobile-menu:hover .dropdown-menu {
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+/* S devices */
+@media only screen and (max-width: 768px){
+
+    header{
+
+        /* These are the desktop ones  */
+        .navLinks{
+            display: none;
+        }
+
+        /* These are the mobile ones  */
+        .mobile-menu {
+            .dropdown-menu {
+                min-width:1000%;
+
+                .linksDropdownMenu{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .menuDivision{
+                        width: 100%;
+                    }
+
+                    .dropdown-item{
+                        .mobileNavIcons{
+                            width: 50px;
+                            height: 42px;
+                            /* border-radius: 50%; */
+                            background-color: var(--neutral-color-grey-200);
+
+                            img{
+                                width: 20px;
+                                height:20px;
+                                margin-top: 12px;
+                                margin-left: 12px;
+                            }
+                        }
+
+                    }
+
+                }
+
+                .socialDropdownMenu{
+                    justify-content: center;
+                    align-items: center;
+
+                    .socialMediaLogos{
+                        gap: 30px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+}
+

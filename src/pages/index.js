@@ -1,140 +1,214 @@
-import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+// import { useStaticQuery, graphql } from "gatsby"
+// import {  StaticImage ,getImage, GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import NuestrosClientes from "../components/nuestrosClientes"
 import "../components/index.module.css"
 import "./index.css"
-import { Typography, Card, CardBody } from "@material-tailwind/react"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql } from "gatsby"
+import indexBackgroundImage from '../images/indexBackground.png';
+import indexBackgroundImage2 from '../images/indexBackgroundMobile.png';
+import { navigate } from 'gatsby'; 
 
-const featuresLotenet = [
-  {
-    img: "flexible",
-    title: "FLEXIBLE",
-    description: "Puedes vender cualquier tipo de juego e se te ocurra.",
-  },
-  {
-    img: "interfaz",
-    title: "INTERFAZ AMIGABLE",
-    description:
-      "Fue diseñada para que sea simple, facil y veloz para su uso constante.",
-  },
-  {
-    img: "documentacion",
-    title: "DOCUMENTACIÓN",
-    description:
-      "Te damos entrenamiento  para usar nuestra aplicacion ademas de recursos extras que puedes acceder en cualquier momento.",
-  },
-  {
-    img: "actualizaciones",
-    title: "ACTUALIZACIONES GRATIS ",
-    description:
-      "Te ofrecemos actualizaciones de seguridad y nuevas caracteristicas sin costo extra.",
-  },
-]
 
-const FeaturesSection = ({ data }) => {
-  const list = featuresLotenet.map((item, idx) => {
-    const image = data[item.img].childImageSharp.gatsbyImageData
-    return (
-      <div key={idx} className="text-center">
-        <GatsbyImage alt="logo" image={image}></GatsbyImage>
-        <Typography variant="h6">{item.title}</Typography>
-        <Typography variant="small">{item.description}</Typography>
-      </div>
-    )
-  })
-  return list
-}
+// const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    {
-      documentacion: file(relativePath: { eq: "documentacion.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 50, placeholder: DOMINANT_COLOR)
-        }
-      }
-      interfaz: file(relativePath: { eq: "interfaz.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 50, placeholder: DOMINANT_COLOR)
-        }
-      }
-      actualizaciones: file(relativePath: { eq: "actualizaciones.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 50, placeholder: DOMINANT_COLOR)
-        }
-      }
-      flexible: file(relativePath: { eq: "flexible.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 50, placeholder: DOMINANT_COLOR)
-        }
-      }
-    }
-  `)
+const lotenetClick = (event) => {
+  navigate("/our-system");
+};
+
+const aboutUsClick = (event) => {
+  navigate("/about-us");
+};
+
+
+export default function Home() {
   return (
-    <Layout>
-      {/* MAIN SECTION */}
-      <div className="grid grid-cols-1 gap-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 p-5 rounded-lg bg-red-700 text-white">
-          <div>
-            <Typography variant="h1">Orkapi</Typography>
-            <Typography variant="paragraph">
-              Somos una empresa lider en el desarrollo de software de
-              administracion y venta de juegos de loteria y electronicos.
-            </Typography>
-          </div>
-          <div className="flex items-center">
-            <div className="logo-blanco">
-              <StaticImage
-                alt="logo"
-                src="../images/orkapi-logo.png"
-              ></StaticImage>
+  <Layout>
+    <main>
+
+      <div class="bannerIndex"
+        style={{ 
+          backgroundImage: `url(${indexBackgroundImage})`, 
+          backgroundSize: '100%', 
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top left', 
+          height: '210vh' 
+        }}
+      > 
+        <div class="textContent">
+          <div class="textBox">
+            <h1>Soluciones software</h1>
+            <p class="emphasizedT">Actualmente empresa líder en sistemas de lotería.</p>
+            <div class="buttons">
+                <button onClick={lotenetClick} class="button2">Conoce nuestro sistema</button>
+                <button onClick={aboutUsClick} class="button1">Conoce sobre nosotros</button>
             </div>
           </div>
         </div>
-      </div>
-      {/* RUNNER */}
-      {/* <RunnerSection /> */}
-      {/* MID SECTION */}
-      <Card className="p-5 mt-5">
-        <CardBody>
-          <div className="grid grid-cols-1 gap-4">
-            <div className="grid grid-cols-1">
-              <div className="text-center">
-                <Typography variant="h2">LotenetSoft</Typography>
-                <Typography variant="paragraph">
-                  Nos hemos consolidado con la plataforma mas estable y
-                  operativa del mercado dando la informacion en tiempo real
-                  justo cuando la necesitas.
-                </Typography>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 text-center">
-                <div className="flex items-center justify-center">
-                  <StaticImage
-                    width={250}
-                    alt="logo"
-                    src="../images/lotenetbl.png"
-                  ></StaticImage>
+
+        <div class="sectionOurServices">
+        <div class="title">
+          <h3>Nuestros servicios</h3>
+        </div>
+        <div class="services">
+          <div class="row">
+              <div class="card">
+                <div class="header">
+                  <h4>Sistemas de Gestión de Juegos de Lotería</h4>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                  <FeaturesSection data={data}></FeaturesSection>
+                <div class="body">
+                  <p class="normalText">Desarrollo de sistemas completos para la gestión de juegos de lotería, incluyendo administración de sorteos, gestión de premios, seguimiento de ventas, entre otras funcionalidades.</p>
                 </div>
               </div>
+
+              <div class="card">
+                <div class="header">
+                  <h4>Soluciones de Terminales de Puntos de Ventas</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Implementación y mantenimiento de terminales de punto de venta de boletos de lotería, recargas móviles y otros productos.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="header">
+                  <h4>Desarrollo de Juegos Personalizados</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Diseño y desarrollo de juegos de lotería personalizados según las necesidades y preferencias de cada cliente.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+                  <div class="header">
+                    <h4>Desarrollo de Aplicaciones Móviles</h4>
+                  </div>
+                  <div class="body">
+                    <p class="normalText">Creación de aplicaciones móviles personalizadas para plataformas Android, con interfaces intuitivas y actractivas para usuarios de juegos de lotería.</p>
+                  </div>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                  <h4>Desarrollo de Interfaces para Resultados de Sorteos en Vivo</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Desde el desarrollo de funcionamiento y contenido gráfico de este tipo de interfaces, a servicios especializados como animaciones 2D y 3D.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                  <h4>Mantenimiento y Soporte Técnico</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Servicios de mantenimiento preventivo y correcctivo, con soporte téccnico 24/7 para asegurar la operación continua y eficiente de las plataformas de lotería.</p>
+                </div>
             </div>
           </div>
-        </CardBody>
-      </Card>
+        </div>
+        </div>
 
-      {/* Nuestros cientes */}
-      <Card className="p-5 mt-5 mb-5 ">
-        <NuestrosClientes></NuestrosClientes>
-      </Card>
-    </Layout>
-  )
+      </div>
+
+
+
+
+      <div class="mobileBanner"
+        style={{
+          backgroundImage: `url(${indexBackgroundImage2})`, 
+          backgroundRepeat: 'no-repeat',
+          height: '210vh' 
+        }}
+      >
+        <div class="textContent">
+          <div class="textBox">
+            <h1>Soluciones software</h1>
+            <p class="emphasizedT">Actualmente empresa líder en sistemas de lotería.</p>
+            <div class="buttons">
+                <button class="button2">Conoce nuestro sistema</button>
+                <button class="button1">Conoce sobre nosotros</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionOurServices">
+        <div class="title">
+          <h3>Nuestros servicios</h3>
+        </div>
+        <div class="services">
+          <div class="row">
+              <div class="card">
+                <div class="header">
+                  <h4>Sistemas de Gestión de Juegos de Lotería</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Desarrollo de sistemas completos para la gestión de juegos de lotería, incluyendo administración de sorteos, gestión de premios, seguimiento de ventas, entre otras funcionalidades.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="header">
+                  <h4>Soluciones de Terminales de Puntos de Ventas</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Implementación y mantenimiento de terminales de punto de venta de boletos de lotería, recargas móviles y otros productos.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="header">
+                  <h4>Desarrollo de Juegos Personalizados</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Diseño y desarrollo de juegos de lotería personalizados según las necesidades y preferencias de cada cliente.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+                  <div class="header">
+                    <h4>Desarrollo de Aplicaciones Móviles</h4>
+                  </div>
+                  <div class="body">
+                    <p class="normalText">Creación de aplicaciones móviles personalizadas para plataformas Android, con interfaces intuitivas y actractivas para usuarios de juegos de lotería.</p>
+                  </div>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                  <h4>Desarrollo de Interfaces para Resultados de Sorteos en Vivo</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Desde el desarrollo de funcionamiento y contenido gráfico de este tipo de interfaces, a servicios especializados como animaciones 2D y 3D.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                  <h4>Mantenimiento y Soporte Técnico</h4>
+                </div>
+                <div class="body">
+                  <p class="normalText">Servicios de mantenimiento preventivo y correcctivo, con soporte téccnico 24/7 para asegurar la operación continua y eficiente de las plataformas de lotería.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+
+    </main>
+
+  </Layout>
+  );
 }
+
+
 
 /**
  * Head export to define metadata for the page
@@ -143,4 +217,4 @@ const IndexPage = () => {
  */
 export const Head = () => <Seo title="Inicio" />
 
-export default IndexPage
+// export default IndexPage

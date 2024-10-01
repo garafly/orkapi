@@ -1,0 +1,996 @@
+/* XL DEVICES */
+
+.bannerSystem{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+
+
+    .bannerContentSystem{
+        width:100%;
+        height:100%;
+    
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: nowrap;
+    
+    
+        .textContentSystem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 60%;
+
+        
+        
+        
+            .mainTitle{
+                width: 80%;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0;
+
+        
+                h1,p{
+                    margin-left: 8%;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        
+            .bannerPromotion{
+                width: 80%;
+                height: 20%;
+        
+                h4,button{
+                    margin-left: 8%;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        
+            .features{
+                width: 80%;
+                display: flex;
+                margin-top: 2%;
+        
+                .feature1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 8%;
+        
+                    h3,p{
+                        margin: 0;
+                    }
+        
+                }
+        
+            }
+        
+        }
+        
+        .GraphicContentSystem{
+            display: flex;
+            width: 40%;
+            background-size: 85%;
+            background-position:  top center;
+            background-repeat: no-repeat;
+            height: '100vh'
+        }
+    }
+
+}
+
+.characteristics{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+
+    .sectionTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        p{
+            font-size: 24px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+    }
+
+    .cardSection{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        gap: 10%;
+
+
+        .row{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            width: 100%;
+            
+        
+            .card{
+                width: 20%;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 8px solid transparent; 
+                border-image: linear-gradient(to right,#63a7fb, #dd8fb0, #ff6969,#ff0000) 1; /* Adjust colors as needed */
+                padding-bottom: 8px; /* Optional: adds space between content and border */
+                border-radius: 3px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    
+                p{
+                    font-size: 24px;
+                    color: var(--neutral-color-grey-800);
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+
+            .cardSubtext{
+                display: flex;
+                justify-content: center;
+                p {
+                width: 80%;
+                font-size: 18px;
+                font-weight: 400;
+
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}
+
+.ourClients{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-color-grey-100);
+
+    position: relative;
+
+
+    .row{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+
+        .cliente{
+            width: 250px;
+            height: 130px;
+
+
+            #lotedom{
+                background-size: 62% 40%; 
+            }
+
+            #loteka{
+                background-size: 44% 50%; 
+            }
+    
+            #laPrimera{
+                background-size: 65% 50%; 
+            }
+
+            #panama{
+                background-size: 40% 50%; 
+            }
+
+            #lotewin{
+                background-size: 48% 24%; 
+            }
+
+            #espinal{
+                background-size: 55% 35%; 
+            }
+
+            #jt{
+                background-size: 55% 40%; 
+            }
+
+            #haiti{
+                background-size: 50% 60%; 
+            }
+
+            #star{
+                background-size: 70% 30%; 
+            }
+
+        }
+    }
+
+}
+
+.software{
+    background:  linear-gradient(45deg, rgba(0,50,111,1) 0%, rgba(12,80,163,1) 23%, rgba(29,109,205,1) 49%, rgba(78,122,209,1) 60%, rgba(240,99,99,1) 80%, rgba(255,0,0,1) 100%);
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    border: 1px solid #979797;
+
+    .logoInHand{
+        width: 50%;
+        height: 100%;
+
+    }
+
+    #hand{
+        background-size: cover;
+    }
+
+    .textualContent{
+        width: 50%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .box{
+            width:34vw;
+            height: 28vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 50px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.466);
+            background: rgba(255, 255, 255, 0.529);
+
+
+            .logo{
+                width: 60%;
+                height:11vh;
+                margin: 0;
+
+                #logoLotenet{
+                    background-size: 50% 57%; 
+                }
+            }
+
+            .diveInSection{
+                width: 80%;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0;
+                gap: 12%;
+
+              
+
+                p{
+                    text-align: center;
+                    line-height: 3vh;
+                    font-weight: 500;
+                    color: var(--neutral-color-grey-800);
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+/* EXTRA */
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+    .bannerSystem{  
+        .bannerContentSystem{
+        
+            .textContentSystem{
+                justify-content: center;
+                align-items: flex-start;
+
+                .mainTitle{
+                    width: 90%;
+                    justify-content: flex-start;
+                }
+            
+                .bannerPromotion{
+                    width: 100%;
+                }
+            
+            }
+            
+            .GraphicContentSystem{
+                display: flex;
+                width: 40%;
+                background-size: 100%;
+                background-position:  top center;
+                background-repeat: no-repeat;
+                height: '100vh'
+            }
+        }
+    
+    }
+
+    .characteristics{
+        align-items: center;
+
+        .sectionTitle{
+            width: 90%;
+    
+            p{
+                text-align: center;
+                line-height: 4vh;
+            }
+    
+        }
+    
+        .cardSection{
+            .row{          
+                .card{
+                    width: 25%;
+                }
+    
+                .cardSubtext{
+                    display: flex;
+                    justify-content: center;
+                    p {
+                    width: 80%;
+                    font-size: 18px;
+                    font-weight: 400;
+    
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+    .ourClients{
+        justify-content: center;
+        align-items: center;
+    
+        .row{
+            width: 90%;
+            gap: 2%;
+        }
+    
+    }
+    
+    .software{
+    
+        #hand{
+            background-size: cover;
+        }
+    
+        .textualContent{
+    
+            .box{
+                height: 30vh;
+                .logo{
+                    width: 70%;
+                    height:11vh;
+    
+                    #logoLotenet{
+                        background-size: 50% 57%; 
+                    }
+                }
+    
+                .diveInSection{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+/* L DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+   
+    .bannerSystem{  
+        .bannerContentSystem{
+        
+            .textContentSystem{
+                justify-content: center;
+                align-items: flex-start;
+
+                .mainTitle{
+                    width: 90%;
+                    justify-content: flex-start;
+                }
+            
+                .bannerPromotion{
+                    width: 100%;
+                }
+            
+            }
+            
+            .GraphicContentSystem{
+                display: flex;
+                width: 40%;
+                margin-top: 4vh;
+                background-size: 100%;
+                background-position: top center;
+                background-repeat: no-repeat;
+                height: '90vh'
+            }
+        }
+    
+    }
+
+    .characteristics{
+        align-items: center;
+
+        .sectionTitle{
+            width: 90%;
+    
+            p{
+                text-align: center;
+                line-height: 4vh;
+            }
+    
+        }
+    
+        .cardSection{
+            .row{          
+                .card{
+                    width: 25%;
+                }
+    
+                .cardSubtext{
+                    display: flex;
+                    justify-content: center;
+                    p {
+                    width: 80%;
+                    font-size: 18px;
+                    font-weight: 400;
+    
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+    .ourClients{
+        justify-content: center;
+        align-items: center;
+    
+        .row{
+            width: 90%;
+            gap: 2%;
+        }
+    
+    }
+    
+    .software{
+    
+        #hand{
+            background-size: cover;
+        }
+    
+        .textualContent{
+    
+            .box{
+                height: 30vh;
+                .logo{
+                    width: 70%;
+                    height:11vh;
+    
+                    #logoLotenet{
+                        background-size: 50% 57%; 
+                    }
+                }
+    
+                .diveInSection{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    
+}
+
+/* M DEVICES */
+@media only screen and (max-width: 992px) {
+    .bannerSystem{
+        width: 100vw;
+        height: 200vh;
+        background-size: 100% 90%;
+    
+        .bannerContentSystem{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            height: 200vh;
+        
+        
+            .textContentSystem{
+                justify-content: flex-end;
+                height: 80vh;
+                width: 100%;
+                gap: 8%;
+            
+            
+                .mainTitle{
+                    width: 90%;
+
+                }
+            
+                .bannerPromotion{
+                    width: 90%;
+                }
+            
+                .features{
+                    width: 90%;     
+            
+                }
+            
+            }
+            
+            .GraphicContentSystem{
+                display: none;
+            }
+        }
+    
+    }
+    
+    .characteristics{
+        width: 100vw;
+        height: 120vh;
+        align-items: center;
+        justify-content: flex-start;
+    
+        .sectionTitle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+    
+            p{
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0.07vw;
+            }
+    
+        }
+    
+        .cardSection{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            gap: 2%;
+    
+    
+            .row{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5%;
+                width: 50%;
+                
+            
+                .card{
+                    width: 85%;
+                    height: 25vh;
+                    margin-bottom: 4vh;
+        
+                }
+    
+                .cardSubtext{
+                    p {
+                    width: 90%;
+                    font-size: 18px;
+                    line-height: 3vh;
+    
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+    .ourClients{
+        justify-content: center;
+        align-items: center;
+    
+        .row{
+            width: 90%;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+    
+    
+            .cliente{
+                width: 120px;
+                height: 80px;
+                padding: 0 5px;
+    
+            }
+            #lotedom{
+                background-size: 95%; 
+            }
+
+            #loteka{
+                background-size: 95%; 
+            }
+
+            #laPrimera{
+                background-size: 95%; 
+            }
+
+            #panama{
+                background-size: 95%; 
+            }
+
+            #lotewin{
+                background-size: 95%; 
+            }
+
+            #espinal{
+                background-size: 95%; 
+            }
+
+            #jt{
+                background-size: 95%; 
+            }
+
+            #haiti{
+                background-size: 95%; 
+            }
+
+            #star{
+                background-size: 95%; 
+            }
+        }
+    
+    }
+    
+    .software{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    
+        .logoInHand{
+            width: 50%;
+            height: 100%;
+    
+        }
+    
+        #hand{
+            background-size: cover;
+        }
+    
+        .textualContent{
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+    
+            .box{
+                width:60%;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 50px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.466);
+                background: rgba(255, 255, 255, 0.529);
+    
+    
+                .logo{
+                    width: 60%;
+                    height:11vh;
+                    margin: 0;
+    
+                    #logoLotenet{
+                        background-size: 50% 57%; 
+                    }
+                }
+    
+                .diveInSection{
+                    width: 80%;
+                    height: 20vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    gap: 12%;
+    
+                  
+    
+                    p{
+                        text-align: center;
+                        line-height: 3vh;
+                        font-weight: 500;
+                        color: var(--neutral-color-grey-800);
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* S devices */
+@media only screen and (max-width: 768px){
+    .bannerSystem{
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 70%;
+    
+        .bannerContentSystem{
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            height: 100vh;
+        
+            .textContentSystem{
+                justify-content: center;
+                height: 90vh;
+                width: 100%;
+                gap: 2%;
+            
+            
+                .mainTitle{
+                    width: 100%;
+
+                }
+            
+                .bannerPromotion{
+                    width: 100%;
+                    margin-bottom: 1vh;
+                }
+            
+                .features{
+                    flex-direction: column;
+                    width: 90%;  
+                    height: 25%; 
+                    justify-content: space-around;
+            
+                }
+            
+            }
+            
+            .GraphicContentSystem{
+                display: none;
+            }
+        }
+    
+    }
+    
+    .characteristics{
+        width: 100vw;
+        height: 210vh;
+        align-items: center;
+        justify-content: flex-start;
+    
+        .sectionTitle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            text-align: center;
+
+    
+            p{
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.07vw;
+                line-height: 3vh;
+            }
+    
+        }
+    
+        .cardSection{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+    
+            .row{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5%;
+                width: 100%;
+                
+            
+                .card{
+                    width: 75%;
+                    height: 24vh;
+                    margin-bottom: 4vh;
+        
+                }
+    
+                .cardSubtext{
+                    p {
+                    width: 95%;
+                    font-size: 16px;
+                    line-height: 3vh;
+    
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+    .ourClients{
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    
+        .row{
+            width: 90%;
+            height: 40%;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+    
+    
+            .cliente{
+                width: 140px;
+                height: 80px;
+                padding: 0 5px;
+    
+            }
+            #lotedom{
+                background-size: 100%; 
+            }
+
+            #loteka{
+                background-size: 100%; 
+            }
+
+            #laPrimera{
+                background-size: 100%; 
+            }
+
+            #panama{
+                background-size: 100%; 
+            }
+
+            #lotewin{
+                background-size: 100%; 
+            }
+
+            #espinal{
+                background-size: 100%; 
+            }
+
+            #jt{
+                background-size: 100%; 
+            }
+
+            #haiti{
+                background-size: 100%; 
+            }
+
+            #star{
+                background-size: 100%; 
+            }
+        }
+    
+    }
+    
+    .software{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    
+        .logoInHand{
+            width: 100%;
+            height: 100%;
+    
+        }
+    
+        #hand{
+            background-size: cover;
+        }
+    
+        .textualContent{
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+    
+            .box{
+                width:80%;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 50px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.466);
+                background: rgba(255, 255, 255, 0.529);
+    
+    
+                .logo{
+                    width: 70%;
+                    height:11vh;
+                    margin: 0;
+    
+                    #logoLotenet{
+                        background-size: 50% 57%; 
+                    }
+                }
+    
+                .diveInSection{
+                    width: 80%;
+                    height: 20vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    gap: 12%;
+    
+                  
+    
+                    p{
+                        text-align: center;
+                        line-height: 3vh;
+                        font-weight: 500;
+                        color: var(--neutral-color-grey-800);
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
