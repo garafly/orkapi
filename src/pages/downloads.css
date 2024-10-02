@@ -33,21 +33,22 @@
 
 
         .downloadOption{
-            width: 100%;
+            width: 60%;
             height: 40%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
             margin-bottom: 0;
 
+
+
             .runnerLogo{
-                width: 35%;
+                width: 15vw;
                 height: 15vh;
                 border: 1px solid rgba(163, 163, 163, 0.755);
                 border-radius: 10px;
-                padding: 70px 0;
-                margin-left: 50%;
+                padding: 60px 0;
                 box-shadow: rgba(223, 222, 222, 0.06) 0px 2px 1px, rgba(93, 93, 93, 0.09) 0px 4px 2px, rgba(86, 83, 83, 0.09) 0px 8px 4px, rgba(138, 137, 137, 0.09) 0px 16px 8px, rgba(249, 144, 144, 0.09) 0px 32px 16px;
             }
 
@@ -61,12 +62,31 @@
 
 }
 
+/* L DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .pageContainer{
+    
+        .downloadInfo{
+    
+    
+            .downloadOption{
+                .runnerLogo{
+                    width: 20vw;
+                    height: 15vh;
+                }
+    
+            }
+    
+        }
+    
+    
+    }
+}
+
 /* M DEVICES */
 @media only screen and (max-width: 992px) {
     .pageContainer{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
+        height: 120vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -81,16 +101,12 @@
         .downloadInfo{
             width: 100vw;
             height:80%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8%;
+            gap: 4%;
     
     
             .downloadOption{
                 width: 100%;
-                height: 30%;
+                height: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -102,7 +118,6 @@
                     height: 10%;
                     border: 1px solid rgba(163, 163, 163, 0.755);
                     border-radius: 10px;
-                    margin-left: 0%;
                     box-shadow: rgba(223, 222, 222, 0.06) 0px 2px 1px, rgba(93, 93, 93, 0.09) 0px 4px 2px, rgba(86, 83, 83, 0.09) 0px 8px 4px, rgba(138, 137, 137, 0.09) 0px 16px 8px, rgba(249, 144, 144, 0.09) 0px 32px 16px;
                 }
             }
@@ -117,13 +132,11 @@
 @media only screen and (max-width: 768px) {
     .pageContainer{
         width: 100vw;
-        height: 100vh;
-        display: flex;
+        height: 90vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 0;
-        padding: 0;
+
     
         .downloadCard{
             display: none;
@@ -142,7 +155,7 @@
     
             .downloadOption{
                 width: 100%;
-                height: 35%;
+                height: 40%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -153,9 +166,9 @@
                 .runnerLogo{
                     width: 60%;
                     height: auto;
+                    padding: 80px 0;
                     border: 1px solid rgba(163, 163, 163, 0.755);
                     border-radius: 10px;
-                    margin-left: 0%;
                     box-shadow: rgba(223, 222, 222, 0.06) 0px 2px 1px, rgba(93, 93, 93, 0.09) 0px 4px 2px, rgba(86, 83, 83, 0.09) 0px 8px 4px, rgba(138, 137, 137, 0.09) 0px 16px 8px, rgba(249, 144, 144, 0.09) 0px 32px 16px;
                 }
             }
