@@ -11,7 +11,6 @@
 }
 
 
-
 .downloadCard{
     width: 50vw;
     height: 100vh;
@@ -37,12 +36,12 @@
 }
 
 .downloadOption{
-    display: flex;
-    width: 60%;
-    height: 40%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex!important;
+    width: 60%!important;
+    height: 40%!important;
+    justify-content: center!important;
+    align-items: center!important;
+    flex-direction: column!important;
     margin-bottom: 0;
 
 }
