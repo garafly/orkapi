@@ -39,14 +39,19 @@
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
+            margin-bottom: 0;
 
             .runnerLogo{
-                width: 15vw;
-                height: 10vh;
+                width: 35%;
+                height: 15vh;
                 border: 1px solid rgba(163, 163, 163, 0.755);
                 border-radius: 10px;
-                padding: 80px 0;
+                padding: 40px 0;
                 box-shadow: rgba(223, 222, 222, 0.06) 0px 2px 1px, rgba(93, 93, 93, 0.09) 0px 4px 2px, rgba(86, 83, 83, 0.09) 0px 8px 4px, rgba(138, 137, 137, 0.09) 0px 16px 8px, rgba(249, 144, 144, 0.09) 0px 32px 16px;
+            }
+
+            button{
+                margin-top:0;
             }
         }
 

@@ -28,7 +28,7 @@ export default function fifthPage() {
               class="runnerLogo"
               style={{
                 backgroundImage: `url(${runnerLogo})`,
-                backgroundSize: "100%",
+                backgroundSize: "95% auto",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 height: "10vh",
