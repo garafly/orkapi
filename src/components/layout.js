@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FloatingWhatsApp } from "react-floating-whatsapp"
 import Header from "./header"
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <Footer></Footer>
 
-      <FloatingWhatsApp
+      {/* <FloatingWhatsApp
         avatar={imgOrkapi}
         phoneNumber="18093837933"
         accountName="Orkapi"
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         placeholder="Escribe un mensaje..."
         statusMessage="Típicamente, responde en menos de 1 hora"
       ></FloatingWhatsApp>
-  
+   */}
 
     </>
   )

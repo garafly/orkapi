@@ -29,7 +29,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `files`,
-        path: `${__dirname}/src/static`,
+        path: `${__dirname}/static`,
       },
     },
     `gatsby-transformer-sharp`,

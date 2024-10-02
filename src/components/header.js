@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useEffect } from "react";
 import "./header.css";
 import { StaticImage } from "gatsby-plugin-image";

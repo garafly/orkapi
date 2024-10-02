@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { Typography, Card, CardBody } from "@material-tailwind/react"
 import { useStaticQuery, graphql } from "gatsby"
@@ -15,7 +15,6 @@ function LotenetSection() {
       }
     }
   `)
-  console.log("data::::::", data)
 
   return (
     <div className="relative w-full mt-5 mb-5">

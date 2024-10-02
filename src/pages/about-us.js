@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import "./about-us.css";
 import Layout from "../components/layout"
@@ -24,7 +24,10 @@ export default function thirdPage(){
           <p>Brindando el mejor servicio, respaldado por el mejor equipo de trabajo.</p>
         </div>
         <div class="button">
+          <Link to="#mision">
+
           <button class="button2">Conoce nuestra identidad coorporativa</button>
+          </Link>
         </div>
       </div>
       <div class="graphicContentAbout" style={{ 
@@ -39,9 +42,9 @@ export default function thirdPage(){
 
    </div>
 
-   <div class="corpIdentity">
+   <div class="corpIdentity" id="mision">
     <div class="section1">
-      <h3><span class="darkOrange">Misión</span></h3>
+      <h3 ><span class="darkOrange">Misión</span></h3>
       <p>Proveer a nuestros clientes la capacidad de ofrecer la mayor diversidad y mejor 
       experiencia en Juegos de Loterías y Apuestas.</p>
     </div>
