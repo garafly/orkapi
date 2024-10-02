@@ -3,6 +3,12 @@ import { useEffect } from "react";
 import "./header.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import orkapiLogo from "../images/orkapi-logo.svg"
+import instagramLogo from "../images/instagramLogo.svg";
+import facebookLogo from "../images/facebookLogo.svg";
+import twitterLogo from "../images/twitterLogo.svg";
+import linkendinLogo from "../images/linkedinLogo.svg";
+
 
 
 const Header = ({ siteTitle }) => {
@@ -41,7 +47,7 @@ const Header = ({ siteTitle }) => {
     <header>
       <Link to="/">
       <div className="logo">
-        <StaticImage alt="logo orkapi" src="../images/orkapi-logo.svg" className="logo-image" />
+        <StaticImage alt="logo orkapi" src={orkapiLogo} className="logo-image" />
       </div>
       </Link>
 
@@ -130,25 +136,25 @@ const Header = ({ siteTitle }) => {
             <div className="socialMediaLogos">
               <a href="https://www.instagram.com/orkapi_srl?igsh=YzUzcmRsazBmMmtr">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="instagramLogo" src="../images/instagramLogo.svg" />
+                  <StaticImage alt="instagramLogo" src={instagramLogo} />
                 </div>
               </a>
 
               <a href="https://www.facebook.com/share/64r1nJJNFnPjzppz/?mibextid=LQQJ4d">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="facebookLogo" src="../images/facebookLogo.svg" />
+                  <StaticImage alt="facebookLogo" src={facebookLogo} />
                 </div>
               </a>
 
               <a href="https://x.com/i/flow/login?redirect_after_login=%2Forkapitech">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="twitterLogo" src="../images/twitterLogo.svg" />
+                  <StaticImage alt="twitterLogo" src={twitterLogo} />
                 </div>
               </a>
 
               <a href="https://do.linkedin.com/company/orkapi-technology">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="linkedinLogo" src="../images/linkedInLogo.svg" />
+                  <StaticImage alt="linkedinLogo" src={linkendinLogo} />
                 </div>
               </a>
               

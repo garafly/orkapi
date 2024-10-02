@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./footer.css";
 import Dropdown from "./dropdownMenu";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import instagramLogo from "../images/instagramLogo.svg";
+import facebookLogo from "../images/facebookLogo.svg";
+import twitterLogo from "../images/twitterLogo.svg";
+import linkendinLogo from "../images/linkedinLogo.svg";
 
 
 
@@ -123,22 +126,22 @@ function Footer() {
           <div className="socialMedia">
               <a href="https://www.instagram.com/orkapi_srl?igsh=YzUzcmRsazBmMmtr">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="instagramLogo" src="../images/instagramLogo.svg" />
+                  <StaticImage alt="instagramLogo" src={instagramLogo} />
                 </div>
               </a>
               <a href="https://www.facebook.com/share/64r1nJJNFnPjzppz/?mibextid=LQQJ4d">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="facebookLogo" src="../images/facebookLogo.svg" />
+                  <StaticImage alt="facebookLogo" src={facebookLogo} />
                 </div>
               </a>
               <a href="https://x.com/i/flow/login?redirect_after_login=%2Forkapitech">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="twitterLogo" src="../images/twitterLogo.svg" />
+                  <StaticImage alt="twitterLogo" src={twitterLogo} />
                 </div>
               </a>
               <a href="https://do.linkedin.com/company/orkapi-technology">
                 <div className="socialMediaLogo">
-                  <StaticImage alt="linkedInLogo" src="../images/linkedInLogo.svg" />
+                  <StaticImage alt="linkedInLogo" src={linkendinLogo} />
                 </div>
               </a>
           </div>
@@ -161,22 +164,22 @@ function Footer() {
           <div className="iconsContainer">
             <a href="https://www.instagram.com/orkapi_srl?igsh=YzUzcmRsazBmMmtr">
               <div className="icon">
-                <StaticImage alt="instagramLogo" src="../images/instagramLogo.svg" />
+                <StaticImage alt="instagramLogo" src={instagramLogo} />
               </div>
             </a>
             <a href="https://www.facebook.com/share/64r1nJJNFnPjzppz/?mibextid=LQQJ4d">
               <div className="icon">
-                <StaticImage alt="facebookLogo" src="../images/facebookLogo.svg" />
+                <StaticImage alt="facebookLogo" src={facebookLogo} />
               </div>
             </a>
             <a href="https://x.com/i/flow/login?redirect_after_login=%2Forkapitech">
               <div className="icon">
-                <StaticImage alt="twitterLogo" src="../images/twitterLogo.svg" />
+                <StaticImage alt="twitterLogo" src={twitterLogo} />
               </div>
             </a>
             <a href="https://do.linkedin.com/company/orkapi-technology">
               <div className="icon">
-                <StaticImage alt="linkedInLogo" src="../images/linkedInLogo.svg" />  
+                <StaticImage alt="linkedInLogo" src={linkendinLogo} />  
               </div>
             </a>
 
